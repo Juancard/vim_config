@@ -14,6 +14,10 @@ so ~/.vim/plugins-config.vim
 colorscheme gruvbox
 set background=dark    " Setting dark mode
 
+autocmd FileType tex setlocal spell
+autocmd FileType tex setlocal spell spelllang=es
+autocmd FileType tex setlocal tw=80
+
 au BufNewFile, BufRead *.py set tabstop=5 softtabstop=5 shiftwidth=5 textwidth=80 expandtab autoindent fileformat=unix
 
 au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
