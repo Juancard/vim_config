@@ -7,6 +7,9 @@ Plug 'yuezk/vim-js'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Chiel92/vim-autoformat'
 
+"autocomplete/goto
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 "Themes
 Plug 'morhetz/gruvbox'
 
