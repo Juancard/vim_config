@@ -1,3 +1,4 @@
+let g:polyglot_disabled = ['latex']
 filetype off
 set nu
 set relativenumber
@@ -11,6 +12,7 @@ so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/plugins-config.vim
 
+let g:gruvbox_guisp_fallback = "bg"
 colorscheme gruvbox
 set background=dark    " Setting dark mode
 

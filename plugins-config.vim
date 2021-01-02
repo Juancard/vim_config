@@ -11,7 +11,6 @@ let g:flake8_show_in_gutter=1
 
 "polyglot
 let python_highlight_all=1
-let g:polyglot_disabled = ['latex']
 
 "fzf
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
