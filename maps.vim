@@ -1,8 +1,5 @@
 nnoremap <silent> <C-p> :FZF<CR>
 
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-
 let mapleader = " "
 
 nnoremap <Leader>vv :vimgrep <cword> ./**/* <CR>:cw<CR>
@@ -21,6 +18,9 @@ nmap <Leader>gl :diffget //3<CR>
 
 nnoremap <Leader>nt :NERDTree<CR>
 nnoremap <Leader>ut :UndotreeToggle<CR>
+
+nnoremap <Leader>csc :CocSearch <c-R><c-W><CR>
+nnoremap <Leader>b :Buffers<CR>
 
 "START COC DOCUMENTAION - COPY PASTE
 
