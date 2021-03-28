@@ -14,6 +14,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 
 "syntax
+Plug 'dense-analysis/ale'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'nvie/vim-flake8'
 Plug 'lervag/vimtex'
