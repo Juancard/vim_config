@@ -18,6 +18,7 @@ Plug 'dense-analysis/ale'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'nvie/vim-flake8'
 Plug 'lervag/vimtex'
+Plug 'mustache/vim-mustache-handlebars'
 
 " search
 Plug 'junegunn/fzf'

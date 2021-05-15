@@ -18,6 +18,9 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:tex_conceal='abdmg'
 
+"handlebars
+let g:mustache_abbreviations = 1
+
 "coc
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-html', 'coc-css', 'coc-json', 'coc-python', 'coc-yaml', 'coc-vimtex']
 
