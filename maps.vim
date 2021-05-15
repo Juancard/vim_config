@@ -22,6 +22,9 @@ nnoremap <Leader>ut :UndotreeToggle<CR>
 nnoremap <Leader>csc :CocSearch <c-R><c-W><CR>
 nnoremap <Leader>b :Buffers<CR>
 
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
 "START COC DOCUMENTAION - COPY PASTE
 
 " Use tab for trigger completion with characters ahead and navigate.
