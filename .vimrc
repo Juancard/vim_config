@@ -19,7 +19,7 @@ autocmd FileType tex setlocal spell spelllang=es
 autocmd FileType tex setlocal tw=80
 autocmd FileType tex setlocal conceallevel=1
 
-au BufNewFile, BufRead *.py set tabstop=5 softtabstop=5 shiftwidth=5 textwidth=80 expandtab autoindent fileformat=unix
+au BufNewFile, BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 expandtab autoindent fileformat=unix
 
 au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 syntax on
@@ -31,4 +31,3 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-
