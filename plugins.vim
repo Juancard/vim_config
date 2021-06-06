@@ -8,6 +8,9 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'Chiel92/vim-autoformat'
 Plug 'janko-m/vim-test'
 
+"less
+Plug 'groenewege/vim-less'
+
 "autocomplete/goto
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
