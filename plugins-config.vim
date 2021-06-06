@@ -21,6 +21,11 @@ let g:tex_conceal='abdmg'
 "handlebars
 let g:mustache_abbreviations = 1
 
+"vimtest
+let test#strategy = "vimterminal"
+let test#python#runner = 'pyunit'
+let test#python#pyunit#executable='python3 -m unittest'
+
 "coc
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-html', 'coc-css', 'coc-json', 'coc-python', 'coc-yaml', 'coc-vimtex']
 

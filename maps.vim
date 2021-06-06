@@ -19,6 +19,13 @@ nmap <Leader>gl :diffget //3<CR>
 nnoremap <Leader>nt :NERDTree<CR>
 nnoremap <Leader>ut :UndotreeToggle<CR>
 
+"vimtest
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+
 nnoremap <Leader>csc :CocSearch <c-R><c-W><CR>
 nnoremap <Leader>b :Buffers<CR>
 
