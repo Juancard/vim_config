@@ -22,9 +22,18 @@ autocmd FileType tex setlocal conceallevel=1
 au BufNewFile, BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 expandtab autoindent fileformat=unix
 
 au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Ansible syntax
+au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible
+
 syntax on
 
 filetype plugin indent on
+
+"" Swap files
+set undodir=~/.vim/undodir
+set undofile
+set noswapfile
 
 "" Searching
 set hlsearch                    " highlight matches
@@ -35,3 +44,4 @@ set smartcase                   " ... unless they contain at least one capital l
 set tabstop=4 
 set softtabstop=4 
 set shiftwidth=4
+set expandtab

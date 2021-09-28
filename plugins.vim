@@ -45,4 +45,7 @@ Plug 'tpope/vim-fugitive'
 " see: https://github.com/iamcco/markdown-preview.nvim/issues/50
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+" ansible
+Plug 'pearofducks/ansible-vim'
+
 call plug#end()

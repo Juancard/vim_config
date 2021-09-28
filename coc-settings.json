@@ -1,14 +1,18 @@
 {
   "python.formatting.provider": "autopep8",
   "python.formatting.blackPath": "~/.local/bin/black",
+  "python.jediEnabled": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
-    "yml",
     "javascript",
-    "css",
     "html",
+    "css",
     "json",
     "jsonc",
-    "markdown"
-  ]
+    "markdown",
+    "yml"
+  ],
+  "yaml.completion": true,
+  "yaml.format.enable": true,
+  "yaml.validate": true
 }
