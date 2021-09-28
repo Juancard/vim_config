@@ -34,7 +34,7 @@ filetype plugin indent on
 if has('persistent_undo')         "check if your vim version supports
   set undodir=$HOME/.vim/undodir  "directory where the undo files will be stored
   set undofile                    "turn on the feature
-  "set noswapfile                  "stop creating swap files
+  set noswapfile                  "stop creating swap files
 endif
 
 "" Searching
