@@ -31,9 +31,11 @@ syntax on
 filetype plugin indent on
 
 "" Swap files
-set undodir=~/.vim/undodir
-set undofile
-set noswapfile
+if has('persistent_undo')         "check if your vim version supports
+  set undodir=$HOME/.vim/undodir  "directory where the undo files will be stored
+  set undofile                    "turn on the feature
+  "set noswapfile                  "stop creating swap files
+endif
 
 "" Searching
 set hlsearch                    " highlight matches
