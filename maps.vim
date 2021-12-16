@@ -19,6 +19,9 @@ nmap <Leader>gl :diffget //3<CR>
 nnoremap <Leader>nt :NERDTree<CR>
 nnoremap <Leader>ut :UndotreeToggle<CR>
 
+"ALE (use for tex files for example)
+nmap <silent> <C-e> <Plug>(ale_next_wrap)
+
 "vimtest
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>

@@ -29,8 +29,10 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 " status bar
-Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " typing
 Plug 'alvan/vim-closetag'

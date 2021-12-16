@@ -1,6 +1,6 @@
 {
-  "python.formatting.provider": "autopep8",
-  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "79"],
   "python.jediEnabled": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",

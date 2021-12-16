@@ -8,6 +8,18 @@ let g:ale_fixers = {'tex': ['latexindent']}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0
 
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors    return l:counts.total == 0 ? 'OK' : printf(
+        \   '%d⨉ %d⚠ ',
+        \   all_non_errors,
+        \   all_errors
+        \)
+endfunction
+
+set statusline+=%=
+set statusline+=\ %{LinterStatus()}
+
 "fzf
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 let $FZF_DEFAULT_OPTS='--reverse'
@@ -25,6 +37,34 @@ let g:mustache_abbreviations = 1
 let test#strategy = "vimterminal"
 let test#python#runner = 'pyunit'
 let test#python#pyunit#executable='python3 -m unittest'
+
+"airline (statusline)
+let g:airline#extensions#tabline#enabled = 1
+
+"lightline (statusline)
+let g:lightline = {}
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_infos': 'lightline#ale#infos',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'right',
+      \     'linter_infos': 'right',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'right',
+      \ }
+
+let g:lightline.active = {
+            \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
+            \            [ 'lineinfo' ],
+	    \            [ 'percent' ],
+	    \            [ 'fileformat', 'fileencoding', 'filetype'] ] }
 
 "coc
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-html', 'coc-css', 'coc-json', 'coc-python', 'coc-yaml', 'coc-vimtex']
